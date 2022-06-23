@@ -1,0 +1,9 @@
+[package]
+name = "amplicon_caller"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+statrs = "0.15.0"
+float_extras = "0.1.6"
+linked-hash-map = "0.5.4"

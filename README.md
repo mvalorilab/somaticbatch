@@ -1,2 +1,3 @@
 # somaticbatch
-A variant caller for low frequency SNVs and small indels
+
+A variant caller for calling low allelic fraction SNVs and small indels from NGS amplicon data. The expected use case is to run the caller for a single lab prep batch / sequencing run (tens to hundreds of samples). This is required for the noise estimation to work correctly. It is impossible to call single samples at a time, a full run of similarly processed samples is always required. This is the barebones initial version that we used to analyze the data for our paper. In order to run you will need to have the reference genome (faidx indexed) in the current directory and named *ref.fasta*. In addition, a target region definition needs to be placed in the current directory as well and named *target.bed*. The names of the input bam files are passed as command line arguments. A more user-friendly update is planned.
